@@ -12,3 +12,15 @@ function age_of_user() {
     return age;
 }
 
+function get_great() {
+    "use strict";
+    alert("It's my " + build_great(5) + "grandmother!");
+}
+
+function build_great(depth) {
+    if(depth > 0)
+        return "great " + build_great(depth - 1);
+    else
+        return "";
+}
+
