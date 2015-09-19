@@ -1,7 +1,7 @@
 function check_user_age() {
     "use strict";
     if (age_of_user() < 18)
-    alert("Please get the fuck aus.");
+    console.log("Please get the fuck aus.");
 }
 
 function age_of_user() {
@@ -18,6 +18,7 @@ function get_great() {
 }
 
 function build_great(depth) {
+    "use strict";
     if(depth > 0)
         return "great " + build_great(depth - 1);
     else

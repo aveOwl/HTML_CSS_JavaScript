@@ -1,0 +1,28 @@
+body {
+    background-color: #27897e;
+}
+h1 {
+    color: white;
+    padding: 10px;
+    font-family: courier;
+}
+input {
+    background-color: #ff0000;
+    border-style: solid;
+    border-color: #ff0000;
+    color: #ffffff;
+    width: 70px;
+    height: 30px;
+    font-family: courier;
+    border: outset;
+}
+input:hover {
+    background-color: #0a00ff;
+    border-style: solid;
+    border-color: #0a00ff;
+    color: #ffffff;
+    width: 70px;
+    height: 30px;
+    font-family: courier;
+    border: outset;
+}
