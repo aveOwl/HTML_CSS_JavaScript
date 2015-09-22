@@ -1,81 +1,83 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Find a match</title>
+    <title>Assignment_part1</title>
     <meta name="Bohdan" content="Assignment">
-    <link rel="stylesheet" href="main.css">
+    <link href="mainCSS.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 <div>
-    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <h1 class="hstyle">Please Enter Your Details For Our Dating Website!</h1>
 </div>
 
-<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get" enctype="multipart/form-data">
-    <fieldset>
-        <legend>Your Face</legend>
-        <label for="image">Your image:</label>
-        <input type="file" name="image" id="image" required>
-        <br>
-        <label for="imagePreview">Image preview:</label>
-        <img id="preview">
-    </fieldset>
+<div class="wrapper">
+    <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="image">Your image:</label>
+            <input type="file" name="image" id="image" required>
+            <br>
+            <label for="imagePreview">Image preview:</label>
+            <img id="preview" class="prew">
+        </fieldset>
 
-    <fieldset>
-        <legend>Your General Details</legend>
-        <label for="name">Name:</label>
-        <input type="text" name="firstName" placeholder="Your full name" required>
-        <br>
-        <label for="gender">Gender:</label>
-        <input type="radio" name="sex" value="Male" required>Male
-        <input type="radio" name="sex" value="Female" required>Female
-        <br>
-        <label for="age">Age:</label>
-        <input type="number" value="18" name="age" min="1" max="99" step="1" required>
-        <br>
-        <label for="date">Date of birth:</label>
-        <input type="date" name="birthday">
-        <br>
-        <label for="color">Favorite color:</label>
-        <input type="color" name="color">
-        <br>
-        <label for="country">Which country:</label>
-        <select name="countrys">
-            <option></option>
-            <option value="Ukraine">Ukraine</option>
-            <option value="Germany">Germany</option>
-            <option value="US">US</option>
-            <option value="Italia">Italia</option>
-            <option value="Australia">Australia</option>
-        </select>
-    </fieldset>
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="firstName" placeholder="Your full name" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="sex" value="Male" required>Male
+            <input type="radio" name="sex" value="Female" required>Female
+            <br>
+            <label for="age">Age:</label>
+            <input type="number" value="18" name="age" min="1" max="99" step="1" required>
+            <br>
+            <label for="date">Date of birth:</label>
+            <input type="date" name="birthday">
+            <br>
+            <label for="color">Favorite color:</label>
+            <input type="color" name="color">
+            <br>
+            <label for="country">Which country:</label>
+            <select name="countrys">
+                <option></option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Germany">Germany</option>
+                <option value="US">US</option>
+                <option value="Italia">Italia</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </fieldset>
 
-    <fieldset>
-        <legend>Your Indicators</legend>
-        <label for="height">Height:</label>
-        <span id="left">Short</span><input type="range" min="0" max="100" step="5" value="50" name="height"><span id="right">Tall</span>
-        <br>
-        <label for="salary">Salary:</label>
-        <span id="left">Poor</span><input type="range" min="0" max="100" step="5" value="50" name="salary"><span id="right">Rich</span>
-    </fieldset>
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label>
+            <span id="left">Short</span><input type="range" min="0" max="100" step="5" value="50" name="height"><span id="right">Tall</span>
+            <br>
+            <label for="salary">Salary:</label>
+            <span id="left">Poor</span><input type="range" min="0" max="100" step="5" value="50" name="salary"><span id="right">Rich</span>
+        </fieldset>
 
-    <fieldset>
-        <legend>Your Contact Information</legend>
-        <label for="email">Email:</label>
-        <input type="email" name="email" required>
-        <br>
-        <label for="mobile">Mobile:</label>
-        <input type="number" name="mobile">
-        <br>
-        <label for="address">Address:</label>
-        <textarea name="address"></textarea>
-        <br>
-        <label id="sp1" for="method">Method to contact you:</label>
-        <input type="checkbox" name="email" value="email">Email
-        <input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
-        <input type="checkbox" name="in-app" value="in-app">In-app chat
-    </fieldset>
-    <input type="submit" value="Submit!">
-</form>
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+            <label for="mobile">Mobile:</label>
+            <input type="number" name="mobile">
+            <br>
+            <label for="address">Address:</label>
+            <textarea name="address"></textarea>
+            <br>
+            <label id="sp1" for="method">Method to contact you:</label>
+            <input type="checkbox" name="email" value="email">Email
+            <input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
+            <input type="checkbox" name="in-app" value="in-app">In-app chat
+        </fieldset>
+        <input id="subm" type="submit" value="Submit!">
+    </form>
+</div>
 <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
 </body>
 </html>
