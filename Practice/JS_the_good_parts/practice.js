@@ -19,3 +19,21 @@ document.writeln(myObject.value);
 myObject.increment('cat');
 document.writeln(myObject.value);
 
+// The function invocation Pattern
+// Augment myObject with a double method.
+
+myObject.double = function() {
+    var that = this; // Workaround.
+
+    var helper = function() {
+        that.value = add(that.value, that.value);
+    };
+
+    helper();
+}
+
+// Invoke double as a method.
+
+myObject.double();
+document.writeln(myObject.getValue());
+
