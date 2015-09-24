@@ -37,3 +37,19 @@ myObject.double = function() {
 myObject.double();
 document.writeln(myObject.getValue());
 
+// Create a constructor function called Quo.
+// It makes an object with a status property.
+var Quo = function (status) {
+    this.status = status;
+};
+
+// Give all instances of Quo a public method.
+// Called get_status.
+Quo.prototype.get_status = function () {
+    return this.status;
+};
+
+// Make an instance of Quo.
+var myQuo = new Quo("confused"):
+document.writeln(myQuo.get_status()); // confused
+
