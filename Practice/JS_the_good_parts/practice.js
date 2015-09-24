@@ -53,3 +53,15 @@ Quo.prototype.get_status = function () {
 var myQuo = new Quo("confused"):
 document.writeln(myQuo.get_status()); // confused
 
+// Make a function that adds a lot of stuff.
+
+var sum = function() {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+    return sum;
+};
+
+document.writeln(sum(4, 8, 15, 16, 23, 42));
+
