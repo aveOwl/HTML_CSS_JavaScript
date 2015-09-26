@@ -1,5 +1,8 @@
-// Computing correlation
-// We’ll interpret the indices to the array as two-bit binary number, where the leftmost (most significant) digit refers to the boolean variable and the rightmost (least significant) digit refers to the event variable.
+/* Computing correlation
+We’ll interpret the indices to the array as two-bit binary number,
+where the leftmost (most significant) digit refers to the boolean
+variable and the rightmost (least significant) digit refers to the event variable.
+*/
 var JOURNAL = [
   {"events":["carrot","exercise","weekend"],"squirrel":false},
   {"events":["bread","pudding","brushed teeth","weekend","touched tree"],"squirrel":false},
