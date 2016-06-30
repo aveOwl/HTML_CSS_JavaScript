@@ -1,2 +1,5 @@
-# HTML_CSS_JavaScript
-Simple web assignments.
+# Web Practice
+**Technologies involved**
+* HTML
+* CSS
+* JavaScript
